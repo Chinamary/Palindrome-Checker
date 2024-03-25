@@ -4,14 +4,25 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* FONTS */
+  --fontComfortaa: "Comfortaa", sans-serif;
+  --fontRoboto: "Roboto", sans-serif;
+
+  /* COLORS */
+  --primaryBackgroundColor: #e599f7;
+  --secondaryBackgroundColor: #cc5de8;
+  --tertiaryBackgroundColor: #f8f0fc;
+  --btnBackgroundColor: #007bff;
+  --textColor: #fff;
+}
+
 body {
-  font-family: "Comfortaa", sans-serif;
-  /* font-family: "Roboto", sans-serif; */
+  font-family: var(--fontComfortaa);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #eebefa; */
-  background-color: #e599f7;
+  background-color: var(--primaryBackgroundColor);
 }
 
 .container {
@@ -21,9 +32,8 @@ body {
   align-items: center;
   gap: 2em;
   padding: 1.5em;
-  /* border: 2px solid red; */
   border-radius: 10px;
-  background-color: #cc5de8;
+  background-color: var(--secondaryBackgroundColor);
 }
 
 h1 {
@@ -34,17 +44,16 @@ h1 {
 form {
   width: 80%;
   display: flex;
-  /* flex-direction: column; */
   gap: 1em;
 }
 
 input {
   width: 100%;
   padding: 0.5em;
-  border: 1px solid #e599f7;
+  border: 1px solid var(--primaryBackgroundColor);
   border-radius: 5px;
-  background-color: #f8f0fc;
-  font-family: "Roboto", sans-serif;
+  background-color: var(--tertiaryBackgroundColor);
+  font-family: var(--fontRoboto);
 }
 
 input:focus {
@@ -55,14 +64,14 @@ button {
   padding: 0.5em 1em;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
-  color: white;
+  background-color: var(--btnBackgroundColor);
+  color: var(--textColor);
   font-weight: 700;
   cursor: pointer;
 }
 
 .result__text {
-  color: white;
+  color: var(--textColor);
 }
 
 @media screen and (max-width: 640px) {
