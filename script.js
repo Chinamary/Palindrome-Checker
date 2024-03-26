@@ -12,8 +12,8 @@ form.addEventListener('submit', function (e) {
   const reversedString = inputValue.split('').reverse().join('');
   //split() is used to split the code, the reverse() is used to reverse the word while the join() is used to join back the reversed word
   if (reversedString === inputValue) {//Here, if reversedString is strictly equals to inputValue show the .result_text
-    document.querySelector(".result__text").textContent = reversedString + " is a palindrome ✔";
+    document.querySelector(".result__text").textContent = reversedString + " is a palindrome word ✔";
   } else {//If not show this one
-    document.querySelector(".result__text").textContent = reversedString + " is not a palindrome ❌";
+    document.querySelector(".result__text").textContent = reversedString + " is not a palindrome word ❌";
   }
 });
