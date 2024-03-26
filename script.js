@@ -17,6 +17,3 @@ form.addEventListener('submit', function (e) {
     document.querySelector(".result__text").textContent = "Not right";
   }
 });
-
-
-
